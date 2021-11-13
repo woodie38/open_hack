@@ -26,7 +26,13 @@
 </form>
         </div>
 
-        
+        <div class = "all_places">
+            {% for place in three_places %}
+            <p><strong> {{ place.name }} </strong></p>
+            <img src = "{{place.image.url}}" class = "place_image"> 
+            <br>
+            {% endfor %}
+        </div>  
         
     </body>
 
